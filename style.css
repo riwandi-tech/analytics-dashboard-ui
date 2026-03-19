@@ -205,3 +205,83 @@ body {
 .stat-change.negative {
   color: var(--negative);
 }
+
+/* WIDGETS SECTION */
+.widgets-section {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.widget {
+  background-color: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 12px;
+  flex: 1;
+}
+
+.widget-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.activity-item {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-time {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.progress-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 1rem;
+}
+
+.progress-item:last-child {
+  margin-bottom: 0;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.progress-bar {
+  background-color: var(--border);
+  height: 8px;
+  border-radius: 999px;
+  flex: 1;
+}
+
+.progress-fill {
+  background-color: var(--accent);
+  height: 8px;
+  border-radius: 999px;
+}
+
+.progress-value {
+  min-width: 40px;
+  text-align: right;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
