@@ -44,6 +44,7 @@ body {
   align-items: center;
   gap: 10px;
   cursor: pointer;
+  transition: opacity 150ms ease;
 }
 
 .nav-logo:hover {
@@ -84,7 +85,7 @@ body {
 .nav-actions i {
   font-size: 1.1rem;
   cursor: pointer;
-  transition: 500ms;
+  transition: color 150ms ease;
   color: var(--text-primary);
 }
 
