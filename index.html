@@ -4,29 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Analytics UI</title>
+
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Remix Icon -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- ========== DASHBOARD WRAPPER ========== -->
     <div class="dashboard">
+      <!-- ========== NAVBAR ========== -->
       <nav class="dashboard-nav">
+        <!-- Logo -->
         <div class="nav-logo">
           <i class="ri-bar-chart-box-fill"></i>
           <span>Dashify</span>
         </div>
+
+        <!-- Menu Links -->
         <ul class="nav-menu">
           <li><a href="#">Dashboard</a></li>
           <li><a href="#">Analytics</a></li>
           <li><a href="#">Reports</a></li>
           <li><a href="#">Settings</a></li>
         </ul>
+
+        <!-- Actions -->
         <div class="nav-actions">
           <i class="ri-notification-3-line"></i>
           <div class="nav-avatar">
@@ -34,12 +47,50 @@
           </div>
         </div>
       </nav>
+      <!-- ========== END NAVBAR ========== -->
+
+      <!-- ========== DASHBOARD BODY ========== -->
       <div class="dashboard-body">
-        <aside>
-          <p>Ini Sidebar!</p>
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="sidebar">
+          <!-- Sidebar Navigation Menu -->
+          <nav class="sidebar-nav">
+            <ul class="sidebar-menu">
+              <li class="sidebar-item active">
+                <i class="ri-dashboard-line"></i>
+                <span>Dashboard</span>
+              </li>
+              <li class="sidebar-item">
+                <i class="ri-pie-chart-line"></i>
+                <span>Analytics</span>
+              </li>
+              <li class="sidebar-item">
+                <i class="ri-file-chart-line"></i>
+                <span>Reports</span>
+              </li>
+              <li class="sidebar-item">
+                <i class="ri-settings-3-line"></i>
+                <span>Settings</span>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Sidebar Navigation Menu -->
+
+          <!-- Sidebar Profile -->
+          <div class="sidebar-profile">
+            <i class="ri-user-3-fill"></i>
+            <span>Riwandi</span>
+          </div>
+          <!-- End Sidebar Profile -->
         </aside>
+        <!-- ===== END SIDEBAR ===== -->
+
+        <!-- ===== MAIN CONTENT ===== -->
         <main>Ini Main!</main>
+        <!-- ===== END MAIN CONTENT ===== -->
       </div>
+      <!-- ========== END DASHBOARD BODY ========== -->
     </div>
+    <!-- ========== END DASHBOARD WRAPPER ========== -->
   </body>
 </html>

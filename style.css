@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 body {
@@ -29,6 +30,7 @@ body {
   justify-content: flex-start;
 }
 
+/* NAV */
 .dashboard-nav {
   background-color: var(--bg-secondary);
   padding: 1rem 2rem;
@@ -41,6 +43,11 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
+}
+
+.nav-logo:hover {
+  opacity: 0.8;
 }
 
 .nav-logo span {
@@ -49,13 +56,12 @@ body {
 
 .nav-logo i {
   font-size: 1.2rem;
-  color: #6c63ff;
+  color: var(--accent);
 }
 
 .nav-menu {
   display: flex;
   gap: 8px;
-  list-style: none;
 }
 
 .nav-menu a {
@@ -63,6 +69,7 @@ body {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
+  padding: 6px 12px;
 }
 
 .nav-menu a:hover {
@@ -76,4 +83,64 @@ body {
 
 .nav-actions i {
   font-size: 1.1rem;
+  cursor: pointer;
+  transition: 500ms;
+  color: var(--text-primary);
 }
+
+.nav-actions i:hover {
+  color: var(--text-secondary);
+}
+
+/* dashboard-body */
+.dashboard-body {
+  display: flex;
+  flex: 1;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background-color: var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 240px;
+  align-self: stretch;
+  padding: 1.5rem 1rem;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.sidebar-item.active {
+  background-color: var(--accent);
+  color: var(--text-primary);
+}
+
+.sidebar-item:hover {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.sidebar-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  color: var(--text-secondary);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sidebar-profile:hover {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+/* MAIN */
