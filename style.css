@@ -1,0 +1,79 @@
+:root {
+  --bg-primary: #0f1117;
+  --bg-secondary: #1a1d27;
+  --bg-card: #1e2130;
+  --accent: #6c63ff;
+  --text-primary: #e2e8f0;
+  --text-secondary: #64748b;
+  --border: #2d3148;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.5;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.dashboard {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.dashboard-nav {
+  background-color: var(--bg-secondary);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo span {
+  font-weight: bold;
+}
+
+.nav-logo i {
+  font-size: 1.2rem;
+  color: #6c63ff;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+}
+
+.nav-menu a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-menu a:hover {
+  color: var(--text-primary);
+}
+
+.nav-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-actions i {
+  font-size: 1.1rem;
+}
