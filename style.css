@@ -25,11 +25,23 @@ body {
   color: var(--text-primary);
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .dashboard {
   height: inherit;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  animation: fadeIn 400ms ease forwards;
 }
 
 /* NAV */
@@ -54,11 +66,12 @@ body {
 }
 
 .nav-logo span {
-  font-weight: bold;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .nav-logo i {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--accent);
 }
 
@@ -152,7 +165,7 @@ body {
 }
 
 .stats-section {
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
 }
 
 .stats-grid {
@@ -365,4 +378,12 @@ body {
   color: var(--accent);
   font-weight: 600;
   cursor: pointer;
+  transition:
+    background-color 150ms ease,
+    color 150ms ease;
+}
+
+.profile-btn:hover {
+  background-color: var(--accent);
+  color: white;
 }
