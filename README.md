@@ -2,7 +2,7 @@
 
 > A modern, responsive analytics dashboard built with pure HTML & CSS — crafted to master CSS Flexbox layout techniques from the ground up.
 
-![Preview](preview.png)
+![Preview](img/preview.png)
 
 ## 📌 About The Project
 
@@ -37,13 +37,13 @@ Through this project, the following CSS Flexbox properties are explored and appl
 
 ## 🗺️ Roadmap
 
-- [ ] Phase 1 — Foundation & Macro Structure
-- [ ] Phase 2 — Navbar
-- [ ] Phase 3 — Sidebar Navigation
-- [ ] Phase 4 — Stat Cards
-- [ ] Phase 5 — Activity Feed & Progress Bars
-- [ ] Phase 6 — Profile Panel
-- [ ] Phase 7 — Polish & Responsiveness
+- [x] Phase 1 — Foundation & Macro Structure
+- [x] Phase 2 — Navbar
+- [x] Phase 3 — Sidebar Navigation
+- [x] Phase 4 — Stat Cards
+- [x] Phase 5 — Activity Feed & Progress Bars
+- [x] Phase 6 — Profile Panel
+- [x] Phase 7 — Polish & Responsiveness
 
 ## 👤 Author
 

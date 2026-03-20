@@ -123,6 +123,7 @@ body {
   width: 240px;
   align-self: stretch;
   padding: 1.5rem 1rem;
+  border-right: 1px solid var(--border);
 }
 
 .sidebar-item {
@@ -162,6 +163,7 @@ body {
 /* MAIN */
 .main-content {
   flex-grow: 1;
+  overflow-y: auto;
 }
 
 .stats-section {
